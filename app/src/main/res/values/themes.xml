@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ThemeCustom1" parent="Theme.AppCompat.Light">
+        <item name="android:statusBarColor">@android:color/white</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+    </style>
+
+    <style name="ThemeCustom2" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">#A0D8E7</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+    </style>
+
+    <style name="ThemeCustom3" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">#FFFFFF</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+    </style>
+
+
+    <style name="MyButtonStyle1" parent="Theme.AppCompat.Light">
+        <item name="android:background">@drawable/margen_activo</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="MyButtonStyle2" parent="Theme.AppCompat.Light">
+        <item name="android:background">@drawable/margen_inactivo</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/fondo</item>
+        <item name="android:statusBarColor">#00000000</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="ThemeCustom4" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:textColorHint">#878787</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+    </style>
+
+</resources>

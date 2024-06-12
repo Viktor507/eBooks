@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">e_Books</string>
+    <string name="title_activity_home">Home</string>
+    <string name="titulo_menu1">Inicio</string>
+    <string name="titulo_menu2">Catálogo</string>
+    <string name="titulo_menu3">Mis libros</string>
+</resources>

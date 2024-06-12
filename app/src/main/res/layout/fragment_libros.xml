@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="FragmentC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnAmados"
+            android:layout_width="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/margen_activo"
+            android:textColor="#FFFFFF"
+            android:text="Amados" />
+
+        <Button
+            android:id="@+id/btnLeidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/margen_inactivo"
+            android:layout_margin="3dp"
+            android:textColor="@color/white"
+            android:text="Leidos" />
+
+        <Button
+            android:id="@+id/btnLeyendo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/margen_inactivo"
+            android:layout_margin="3dp"
+            android:textColor="@color/white"
+            android:text="Leyendo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>

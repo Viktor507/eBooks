@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:daimajia="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:context=".MainActivity">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="6dp"
+            app:cardUseCompatPadding="true"
+            tools:ignore="MissingConstraints">
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/sliderLayout"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:layout_constraintBottom_toTopOf="@+id/txtv1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:pager_animation="ZoomOutSlide" />
+
+            <com.daimajia.slider.library.Indicators.PagerIndicator
+                android:id="@+id/custom_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                daimajia:layout_constraintBottom_toBottomOf="@+id/sliderLayout"
+                daimajia:layout_constraintEnd_toEndOf="@+id/sliderLayout"
+                daimajia:layout_constraintHorizontal_bias="0.5"
+                daimajia:layout_constraintStart_toStartOf="@+id/sliderLayout"
+                daimajia:layout_constraintTop_toTopOf="parent"
+                daimajia:layout_constraintVertical_bias="0.9"
+                daimajia:selected_color="@color/purple_700"
+                daimajia:selected_height="8dp"
+                daimajia:selected_padding_bottom="3dp"
+                daimajia:selected_padding_left="3dp"
+                daimajia:selected_padding_right="3dp"
+                daimajia:selected_padding_top="3dp"
+                daimajia:selected_width="8dp"
+                daimajia:shape="rect"
+                daimajia:unselected_color="#55333333"
+                daimajia:unselected_height="8dp"
+                daimajia:unselected_padding_bottom="3dp"
+                daimajia:unselected_padding_left="3dp"
+                daimajia:unselected_padding_right="3dp"
+                daimajia:unselected_padding_top="3dp"
+                daimajia:unselected_width="8dp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/txtv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:text="Libros recomendados"
+            android:textColor="#7C4DFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/rcv1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardv"
+            app:layout_constraintVertical_bias="0.15"
+            app:layout_constraintHorizontal_bias="0.5"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/txtv2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toBottomOf="@+id/txtv1" />
+
+        <TextView
+            android:id="@+id/txtv2"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Top 3 más amados"
+            android:textColor="#7C4DFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/rcv2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rcv1"
+            app:layout_constraintHorizontal_bias="0.5"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv2"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toBottomOf="@+id/txtv2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

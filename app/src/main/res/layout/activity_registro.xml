@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/black"
+    tools:context=".Registro">
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_marginTop="70dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:text="REGISTRARSE"
+        android:textColor="#7C4DFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt1"
+        android:layout_marginStart="20dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/margen"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:hint="Email"
+        android:padding="25dp"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/Pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Email"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/margen"
+        android:drawableLeft="@drawable/padlock"
+        android:drawablePadding="5dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:padding="25dp"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/RePass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Pass"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/margen"
+        android:drawableLeft="@drawable/padlock"
+        android:drawablePadding="10dp"
+        android:hint="Reescribir Contraseña"
+        android:inputType="textPassword"
+        android:padding="25dp"
+        android:textColor="@color/white" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true">
+
+        <ImageButton
+            android:id="@+id/off1"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/off"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.895"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.396"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/off2"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/off"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.895"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.56"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RePass"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:minLines="3"
+        android:text="Al crear una cuenta en E-BOOKS automáticamente estás aceptando nuestros términos y condiciones de uso"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/BtnReg"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/txt2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/btn_color"
+        android:text="Crear cuenta"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+</RelativeLayout>

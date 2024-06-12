@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/layout/action_bar_custom_layout.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/white"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/custom_title"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:text="Nuevo Título de la ActionBar"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="#7C4DFF" />
+
+</LinearLayout>

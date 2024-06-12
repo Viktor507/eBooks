@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="FragmentB">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="3dp"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnTodos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="3dp"
+                android:clickable="false"
+                android:background="@drawable/margen_activo"
+                android:textAllCaps="false"
+                android:text="Todos"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnRomance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MyButtonStyle2"
+                android:clickable="true"
+                android:layout_margin="3dp"
+                android:textColor="@color/white"
+                android:text="Romance" />
+
+            <Button
+                android:id="@+id/btnFantasia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MyButtonStyle2"
+                android:clickable="true"
+                android:layout_margin="3dp"
+                android:textColor="@color/white"
+                android:text="Fantasia" />
+
+            <Button
+                android:id="@+id/btnTerror"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MyButtonStyle2"
+                android:clickable="true"
+                android:layout_margin="3dp"
+                android:textColor="@color/white"
+                android:text="Terror" />
+
+            <Button
+                android:id="@+id/btnDrama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MyButtonStyle2"
+                android:clickable="true"
+                android:layout_margin="3dp"
+                android:textColor="@color/white"
+                android:text="Drama" />
+
+            <Button
+                android:id="@+id/btnScfi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/MyButtonStyle2"
+                android:clickable="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="7dp"
+                android:textColor="@color/white"
+                android:text="Sci-fi" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/lytselect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

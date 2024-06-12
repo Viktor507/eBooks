@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "722713427402",
+    "project_id": "ebooks-9562b",
+    "storage_bucket": "ebooks-9562b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:722713427402:android:77c24874b89c925e1f2333",
+        "android_client_info": {
+          "package_name": "com.example.e_books"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "722713427402-1ehdm0oftc6lmuckss8akuk2vamepp8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBjbQD__gzQ26MT-nqFoYyeJo1B7OGcafc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "722713427402-1ehdm0oftc6lmuckss8akuk2vamepp8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/black"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/Txt1"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="30dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:elegantTextHeight="true"
+        android:text="E-Books"
+        android:textColor="#7C4DFF"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+
+    <EditText
+        android:id="@+id/Edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Txt1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/margen"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:hint="Correo"
+        android:maxLines="1"
+        android:padding="25dp"
+        android:singleLine="true"
+        android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/Edit2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Edit1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/margen"
+        android:drawableLeft="@drawable/padlock"
+        android:drawablePadding="10dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="25dp"
+        android:singleLine="true"
+        android:textColor="@color/white" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/off1"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/off"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.895"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.44"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/Btn1"
+        android:layout_width="150dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/Edit2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_color"
+        android:text="Iniciar Sesión"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/Txt2"
+        android:layout_width="110dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/Btn1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Crear cuenta"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="17dp"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>
